@@ -1,0 +1,51 @@
+#carousel{
+    background: $default-light-grey;
+    img{
+        width: 50%;
+        height: 50vh;
+        padding: 2rem;
+        padding-left: 80rem;
+    }
+    .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border: 3px solid white;
+  background-color: $default-grey;
+  padding: 3rem;
+}
+.carousel-control-prev-icon{
+    margin-right: 12rem;
+}
+.carousel-control-next-icon{
+    margin-left: 12rem;
+}
+.slide{
+    h1{
+    position: absolute;
+    font-size: 4 * $default-size;
+    width: 30%;
+    top: 110px;
+    left: 200px;
+}
+p{
+    position: absolute;
+    font-size: 2 * $default-size;
+    width: 40%;
+    top:210px;
+    left: 200px;
+}
+a{
+    position: absolute;
+    font-size: 2 * $default-size;
+    text-decoration: none;
+    padding: 1rem;
+    background: $default-grey;
+    color: $default-white;
+    top: 310px;
+    left: 200px
+}
+a:hover{
+    background: $default-orange;
+}
+}
+}
+

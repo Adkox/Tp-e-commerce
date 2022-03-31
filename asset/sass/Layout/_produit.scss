@@ -1,0 +1,44 @@
+//======== Produit =========//
+
+#allproduit {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between;
+  .produit {
+    width: 20%;
+    margin-left: 5rem;
+    text-decoration: none;
+    color: $default-grey;
+    img {
+      height: 40vh;
+      padding-bottom: 2rem;
+    }
+    p {
+    width: 80%;
+    padding-left: 5rem;
+    }
+  }
+  .produit:hover{
+      text-decoration: underline;
+  }
+}
+
+
+//======== service ======= //
+
+#service{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: $default-light-grey;
+  margin-bottom: 3rem;
+  i{
+    padding-right: 1rem;
+  }
+
+p{
+  padding-left: 3.5rem;
+}
+}
