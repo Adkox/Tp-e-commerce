@@ -130,31 +130,7 @@
             <th scope="col"> <i class="fa-solid fa-trash-can"></i> </th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th scope="row"><img src="asset/img/Produit-1.jpg" alt="tkg"></th>
-            <td>Tokyo ghoul Tome 1</td>
-            <td>6.90€</td>
-            <td><input type="number" id="number" value="1"></td>
-            <td>6.90€</td>
-            <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
-          </tr>
-          <tr>
-            <th scope="row"><img src="asset/img/Produit-4.jpg" alt="FP"></th>
-            <td>Fire Punch tome 1 édition collector</td>
-            <td>25.90€</td>
-            <td><input type="number" id="number" value="1"></td>
-            <td>25.90€</td>
-            <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
-          </tr>
-          <tr>
-            <th scope="row"><img src="asset/img/produit-2.jpg.png" alt="BNP"></th>
-            <td>Bonne nuit Punpun tome 1</td>
-            <td>6.50€</td>
-            <td><input type="number" id="number" value="1"></td>
-            <td>6.50€</td>
-            <td><a href="#"><i class="fa-solid fa-trash-can"></i></a></td>
-          </tr>
+        <tbody id="cart-tablebody">
         </tbody>
       </table>
 
@@ -174,16 +150,11 @@
                   <p>Shipping <span id="ship">Free</span></p>
                   <p>You Save <span id="save">4.30€</span></p>
                   <hr>
-                    <p>You Pay <span id="pay">35€</span></p>
-                    <button id="checkout" type="button"> Checkout </button>
+                    <p>You Pay <span id="subtotal">35€</span></p>
+                    <button id="confirm-command" type="button"> Checkout </button>
               </div>
       </div>
 </section>
-
-
-
-
-
             <footer class="container-lg" >
                 <div class="compagny">
                     <h2>Compagny ---</h2>
@@ -225,5 +196,6 @@
                     </form>
                 </div>
             </footer>
+<script src="asset/java/app-pages1.js"></script>
   </body>
 </html>

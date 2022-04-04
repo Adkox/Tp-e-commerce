@@ -21,7 +21,7 @@
       <div>
         <img
           id="logo"
-          src="asset/img/Logo la fnac.png.opdownload"
+          src="asset/img/FNAC-logo-1.jpg.png"
           alt="logo-la-fnac"
         />
       </div>
@@ -48,7 +48,15 @@
       <div class="user">
         <a href=""><i class="fa-solid fa-heart"></i></a>
         <a href=""><i class="fa-solid fa-circle-user"></i></a>
-        <a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+        <div class="dropdown">
+          <div id="cart">
+        <a href="Index_panier.html"><i class="fa-solid fa-basket-shopping"></i></a>
+      </div>
+      <ul id="cart-dropdown" hidden>
+        <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+        <li class="go-to-cart hidden"><a href="/panier/">Voir le panier</a></li>
+    </ul>
+</div>
       </div>
     </header>
     <div class="container-lg" >
@@ -127,14 +135,44 @@
                 <img id="tk" src="asset/img/Produit-1.jpg" alt="TkG">
                 <p>Tokyo Ghoul tome 1</p>
                 <p>6.90€</p>
-            </a>
+              </a>
+              <div class="qt">
+                <label for="a">Quantité: </label>
+                <select id="A" name="a">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+                <button type="button" class="add-to-cart" data-img="asset/img/Produit-1.jpg" data-name="Tokyo Ghoul Tome 1" data-price="6,90"> + <i class="fa-solid fa-basket-shopping"></i></button>
+              </div>
             </div>
             <div id="produit2">
                 <a class="produit" href="#">
                 <img src="asset/img/produit-2.jpg.png" alt="BNP">
                 <p>Bonne nuit Punpun tome 1</p>
                 <p>6.50€</p>
-            </a>    
+              </a>
+              <div class="qt">
+                <label for="b">Quantité: </label>
+                <select id="B" name="b">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+                <button type="button" class="add-to-cart" data-img="asset/img/Produit-2.jpg" data-name="Bonne nuit Punpun tome 1 " data-price="6,50"> + <i class="fa-solid fa-basket-shopping"></i></button>
+              </div>
             </div>
             
             <div  id="produit3">
@@ -142,7 +180,22 @@
                 <img src="asset/img/produit-3.jpg-1.png" alt="BL">
                 <p>Blue Lock tome 7</p>
                 <p>7.90€</p>
-            </a>    
+              </a> 
+              <div class="qt">
+                <label for="c">Quantité: </label>
+                <select id="C" name="c">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+                <button type="button" class="add-to-cart" data-img="asset/img/Produit-3.jpg-1.png" data-name="Blue Lock Tome 7" data-price="7,90"> + <i class="fa-solid fa-basket-shopping"></i></button>
+              </div>
             </div>
            
             <div  id="produit4">
@@ -150,7 +203,22 @@
                 <img src="asset/img/Produit-4.jpg" alt="FP">
                 <p>Fire Punch tome 1 Edition collector</p>
                 <p>25.90€</p>
-            </a>
+              </a>
+              <div class="qt">
+                <label for="d">Quantité: </label>
+                <select id="D" name="d">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+                <button type="button" class="add-to-cart" data-img="asset/img/Produit-4.jpg" data-name="Fire punch Tome 1 édition Collector" data-price="25,90"> + <i class="fa-solid fa-basket-shopping"></i></button>
+              </div>
             </div>
           </div>
 <div id="service" class="container-lg">
@@ -217,6 +285,6 @@
         </form>
     </div>
 </footer>
-
+<script src="asset/java/app-pages1.js"></script>
   </body>
 </html>

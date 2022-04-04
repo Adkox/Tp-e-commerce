@@ -1,0 +1,73 @@
+//======== Produit =========//
+
+#allproduit {
+  width: 100%;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-around;
+
+  .produit {
+    width: 15%;
+    text-decoration: none;
+    color: $default-grey;
+    img {
+      height: 40vh;
+      padding-bottom: 2rem;
+    }
+    p {
+    width: 80%;
+    margin-bottom: 2rem;
+    }
+  }
+  .produit:hover{
+      text-decoration: underline;
+  }
+  .qt{
+    button{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+#A, #C{
+margin-top: 7rem;
+}
+#B, #D{
+  margin-top: 4rem;
+}
+}
+}
+
+
+
+//======== service ======= //
+
+#service{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: $default-light-grey;
+  margin-bottom: 3rem;
+  i{
+    padding-right: 1rem;
+  }
+
+p{
+  padding-left: 3.5rem;
+}
+}
+@media  screen and (max-width: 700px) {
+  #service {
+      flex-direction: column;
+      gap: 5rem;
+      text-align: center;
+  }
+}
+
+@media  screen and (max-width: 900px) {
+  #allproduit {
+      flex-direction:column;
+      align-content: center;
+      
+  }
+}

@@ -1,0 +1,89 @@
+footer {
+  display: flex;
+  gap: 2rem;
+  background-color: $default-blue;
+  color: $default-white;
+  margin-bottom: 2rem;
+  .compagny {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 32%;
+    padding-left: 4rem;
+    a {
+      text-decoration: none;
+      color: $default-white;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  h2 {
+    font-size: $default-size * 3;
+    color: $default-orange;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  .contact {
+    width: 20%;
+    a {
+      text-decoration: none;
+      color: $default-white;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    #icon {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+      color: $default-white;
+
+      a:hover {
+        color: $default-orange;
+        transform: scale(1.2);
+      }
+      a:active {
+        transform: none;
+      }
+    }
+  }
+  .opening {
+    width: 25%;
+    p:last-child {
+      font-size: 1.5rem;
+      text-decoration: underline;
+    }
+  }
+  .newsletter {
+    width: 35%;
+
+    p {
+      padding-bottom: 2rem;
+    }
+    input {
+      border: 2px solid $default-orange;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      width: 50%;
+    }
+    button {
+      padding: 1.5rem;
+      background: $default-orange;
+      color: $default-white;
+      border: 2px solid $default-orange;
+    }
+    button:hover {
+      background: $default-blue;
+    }
+  }
+}
+@media  screen and (max-width: 950px) {
+  footer {
+      flex-direction: column;
+      align-items: center;
+     .contact, .opening, .newsletter{
+      text-align: center;
+     }
+  }
+}
